@@ -11,6 +11,7 @@ fun main() {
     println(barG(0f) is Float)
     println(barG(0L) is Long)
     println("42" / "6")
+    println(barK(1, 2, 3, 4, 5))
     println(barH(6, 6))
     println(barI(6, 6))
     println(barJ(6))
@@ -49,6 +50,8 @@ val barH: (Int, Int) -> Int = { x, y -> x * y + y }
 val barI = { x: Int, y: Int -> x * y + y }
 
 val barJ: (Int) -> Int = { it * 2 + 2 }
+
+fun barK(x: Int, vararg y: Int) = x * y.sum() + y.sum()
 
 fun <T, V> _run(arg: T, f: (T) -> V) = f(arg)
 

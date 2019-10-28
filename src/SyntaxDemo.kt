@@ -1,6 +1,6 @@
 fun main() {
-    // println(foo1("Hello world!"))
-    // println(foo1A("Hello world!"))
+    println(foo1("Hello world!"))
+    println(foo1A("Hello world!"))
     println(foo1MAX("Hello world!"))
     println(greeting("Josh Hug"))
     println(getMessage(404))
